@@ -547,97 +547,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-blue-50">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-20">
-            <div className="flex justify-center mb-6">
-              <RobotMascot size="medium" />
-            </div>
-            <h2 className="font-heading text-4xl sm:text-5xl font-bold mb-8">
-              Invierte en <span className="gradient-text">tu crecimiento profesional</span>
-            </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Planes diseñados para profesionales ambiciosos que quieren dominar el arte de vender
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="pricing-card p-8 hover:scale-105 transition-all duration-500">
-              <CardHeader className="text-center">
-                <Badge variant="outline" className="mb-4 px-4 py-2">Plan Mensual</Badge>
-                <CardTitle className="text-4xl font-bold mb-2">
-                  49€<span className="text-lg font-normal text-slate-600">/mes</span>
-                </CardTitle>
-                <p className="text-slate-600">Perfecto para comenzar</p>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-4 mb-8">
-                  {[
-                    "Simulaciones ilimitadas",
-                    "Feedback detallado con IA",
-                    "Dashboard personal avanzado",
-                    "Análisis de progreso detallado",
-                    "Soporte por email"
-                  ].map((feature, index) => (
-                    <li key={index} className="flex items-center">
-                      <CheckCircle2 className="h-6 w-6 text-blue-600 mr-3 flex-shrink-0" />
-                      <span className="text-slate-700">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link to="/auth" className="block">
-                  <Button className="w-full btn-primary py-4 text-lg font-semibold">
-                    <Rocket className="mr-2 h-5 w-5" />
-                    Comenzar Ahora
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-            
-            <Card className="pricing-card popular p-8 relative hover:scale-105 transition-all duration-500">
-              <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 px-6 py-2 text-white font-semibold">
-                <Star className="mr-2 h-4 w-4 fill-current" />
-                Más Popular
-              </Badge>
-              <CardHeader className="text-center pt-8">
-                <Badge variant="outline" className="mb-4 px-4 py-2 border-blue-200 text-blue-700">Plan Anual</Badge>
-                <CardTitle className="text-4xl font-bold mb-2">
-                  29€<span className="text-lg font-normal text-slate-600">/mes</span>
-                </CardTitle>
-                <p className="text-blue-600 font-semibold mb-2">Facturado anualmente (348€/año)</p>
-                <p className="text-sm text-slate-600">
-                  <span className="line-through text-slate-400">588€</span> 
-                  <span className="text-blue-600 font-bold ml-2">Ahorra 240€</span>
-                </p>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-4 mb-8">
-                  {[
-                    "Todo del plan mensual +",
-                    "Escenarios premium exclusivos",
-                    "Análisis predictivo avanzado",
-                    "Acceso prioritario a nuevas funciones",
-                    "Soporte prioritario 24/7",
-                    "Informes exportables avanzados"
-                  ].map((feature, index) => (
-                    <li key={index} className="flex items-center">
-                      <CheckCircle2 className="h-6 w-6 text-blue-600 mr-3 flex-shrink-0" />
-                      <span className={`text-slate-700 ${index === 0 ? 'font-semibold' : ''}`}>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link to="/auth" className="block">
-                  <Button className="w-full btn-primary py-4 text-lg font-semibold shadow-2xl">
-                    <Trophy className="mr-2 h-5 w-5" />
-                    Obtener Descuento
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-blue-700 relative overflow-hidden">
@@ -739,9 +648,7 @@ const LandingPage = () => {
             <p className="text-slate-500 text-sm mt-2">
               Hecho con ❤️ para vendedores ambiciosos
             </p>
-            <p className="text-slate-600 text-xs mt-3 flex items-center justify-center gap-1">
-              Powered by <span className="font-semibold text-blue-400">EvollAI</span>
-            </p>
+
           </div>
         </div>
       </footer>
